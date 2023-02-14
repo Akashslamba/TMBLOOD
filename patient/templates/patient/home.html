@@ -1,0 +1,34 @@
+{% extends 'patient/base.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TM Blood Report</title>
+  </head>
+  <body bgcolor="#ACDFD5">
+    <div class="add_search">
+        <div class="row GB">
+          <div class="col-1-of-2 GB">
+            <div class="card card_patient card_patient_add GB">
+              <center><img src="../static/patient/img/follow.png" height="180" alt="add patient image" />
+              <div class="card__patient_text">
+                <a href="{% url 'patient_create'%}" ><h3><b>Add patient</b></h3></a></center>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-2 GB">
+            <div class="card card_patient card_patient_search GB">
+              <center><img src="../static/patient/img/magnifier.png" height="180" alt="add patient image" />
+              <div class="card__patient_text">
+                <a href="{% url 'search'%}"><h3><b>Search Patient </b></h3><i class="fa fa-search"></i></a></center>
+              </div>
+            </div>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
+{% endblock  %}
+
